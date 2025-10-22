@@ -27,7 +27,7 @@ async def save_file(client, message):
     await sent.delete()
     await message.delete()
 
-@bot.on_message(filters.text & filters.keyboard)
+@bot.on_message(filters.text & ~filters.regex(r"^/"))
 async def clone_from_link(client, message):
     link_pattern = r"(https?://t\.me/[a-zA-Z0-9_]+/[0-9]+)"
     links = re.findall(link_pattern, message.text)
@@ -56,4 +56,3 @@ async def clone_from_link(client, message):
 
 print("Bot is running...")
 bot.run()
-
