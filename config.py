@@ -1,0 +1,5 @@
+API_ID = 22994386      # Replace with your Telegram API ID (integer)
+API_HASH = "f0df608144a804dfad6f5d318e7e6465"    # Replace with your Telegram API Hash (string)
+BOT_TOKEN = "7270788988:AAE32Rwa8NU-PQYTZ886ASRKDblWajAt8-o"  # Replace with your Telegram Bot Token (string)
+URL_SHORTENER_KEY = "your_shortener_api_key"  # Replace with your shortener API key (string)
+AUTO_DELETE_TIME = 600  # Time in seconds before file auto-delete (3600 = 1 hour)
